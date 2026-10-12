@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#edf4f1">
+    <title>Corossol</title>
+    <link rel="icon" href="./favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32.png">
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png">
+    <style>
+      :root {
+        color-scheme: light;
+        background: #edf4f1;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        width: 100%;
+        min-height: 100%;
+        margin: 0;
+      }
+
+      body {
+        min-height: 100vh;
+        min-height: 100svh;
+        background: #edf4f1;
+      }
+
+      main {
+        display: grid;
+        width: 100%;
+        min-height: 100vh;
+        min-height: 100svh;
+        padding: 24px;
+        place-items: center;
+      }
+
+      .logo {
+        display: block;
+        width: clamp(12rem, 36vw, 26rem);
+        max-width: 70vw;
+        height: auto;
+      }
+
+      @media (max-width: 480px) {
+        .logo {
+          width: min(64vw, 18rem);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <img
+        class="logo"
+        src="./logo-mark.png"
+        alt="Symbole Corossol"
+        width="1024"
+        height="1024"
+      >
+    </main>
+  </body>
+</html>
